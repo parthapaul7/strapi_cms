@@ -1,9 +1,11 @@
 ## ⚙️ Deployment
-``` sudo docker build .
-    sudo docker-compose up
+``` 
+sudo docker build .
+sudo docker-compose up
 ```
-    or 
-``` sudo docker-compose up --build
+or 
+``` 
+sudo docker-compose up --build
 ```
 
 
