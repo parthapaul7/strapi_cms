@@ -2,9 +2,10 @@ version: '3'
 services:
   strapi:
     container_name: strapi
-    build: .
+    build: 
+      context: . 
+      dockerfile: Dockerfile.prod
     image: strapi:latest
-    restart: unless-stopped
     env_file: .env
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
@@ -16,7 +17,7 @@ services:
       JWT_SECRET: ${JWT_SECRET}
       ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
       APP_KEYS: ${APP_KEYS}
-      NODE_ENV: ${NODE_ENV}
+      NODE_ENV: production 
     volumes:
       - ./config:/opt/app/config
       - ./src:/opt/app/src
