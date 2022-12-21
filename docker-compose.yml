@@ -17,7 +17,7 @@ services:
       - DATABASE_NAME=strapi
       - DATABASE_USERNAME=strapi
       - DATABASE_PASSWORD=strapi
-      - NODE_ENV= roduction
+      - NODE_ENV=production
     depends_on:
       - db
   db:
