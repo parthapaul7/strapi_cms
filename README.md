@@ -8,7 +8,11 @@ or
 sudo docker-compose up --build
 ```
 
+## production
 
+```
+sudo docker-compose -f docker-compose.prod.yml up --build
+```
 
 ## 📚 Learn more
 
